@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1394675DB320242B647A6D /* libPods-CalendarForChatRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3324025F53BC23371C2BE147 /* libPods-CalendarForChatRecord.a */; };
+		EAFDD79C2024631200A971BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD79B2024631200A971BF /* AppDelegate.m */; };
+		EAFDD79F2024631200A971BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD79E2024631200A971BF /* ViewController.m */; };
+		EAFDD7A22024631200A971BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD7A02024631200A971BF /* Main.storyboard */; };
+		EAFDD7A42024631200A971BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD7A32024631200A971BF /* Assets.xcassets */; };
+		EAFDD7A72024631200A971BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFDD7A52024631200A971BF /* LaunchScreen.storyboard */; };
+		EAFDD7AA2024631200A971BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7A92024631200A971BF /* main.m */; };
+		EAFDD7B42024631300A971BF /* CalendarForChatRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7B32024631300A971BF /* CalendarForChatRecordTests.m */; };
+		EAFDD7BF2024631300A971BF /* CalendarForChatRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7BE2024631300A971BF /* CalendarForChatRecordUITests.m */; };
+		EAFDD7CE2024640E00A971BF /* WWWeekNoteHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7CD2024640D00A971BF /* WWWeekNoteHeader.m */; };
+		EAFDD7D32024644400A971BF /* WWMessageCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7D02024644300A971BF /* WWMessageCalendarModel.m */; };
+		EAFDD7D42024644400A971BF /* WWTimestampDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7D22024644300A971BF /* WWTimestampDetailInfoModel.m */; };
+		EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */; };
+		EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAFDD7B02024631300A971BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFDD78F2024631200A971BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFDD7962024631200A971BF;
+			remoteInfo = CalendarForChatRecord;
+		};
+		EAFDD7BB2024631300A971BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAFDD78F2024631200A971BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAFDD7962024631200A971BF;
+			remoteInfo = CalendarForChatRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15D865B335AC0BDF10294B41 /* Pods-CalendarForChatRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarForChatRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarForChatRecord/Pods-CalendarForChatRecord.release.xcconfig"; sourceTree = "<group>"; };
+		244B150244BA44180AD373AB /* Pods-CalendarForChatRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarForChatRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarForChatRecord/Pods-CalendarForChatRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		3324025F53BC23371C2BE147 /* libPods-CalendarForChatRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalendarForChatRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFDD7972024631200A971BF /* CalendarForChatRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarForChatRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFDD79A2024631200A971BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAFDD79B2024631200A971BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAFDD79D2024631200A971BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAFDD79E2024631200A971BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAFDD7A12024631200A971BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAFDD7A32024631200A971BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAFDD7A62024631200A971BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAFDD7A82024631200A971BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFDD7A92024631200A971BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAFDD7AF2024631300A971BF /* CalendarForChatRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarForChatRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFDD7B32024631300A971BF /* CalendarForChatRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarForChatRecordTests.m; sourceTree = "<group>"; };
+		EAFDD7B52024631300A971BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFDD7BA2024631300A971BF /* CalendarForChatRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarForChatRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFDD7BE2024631300A971BF /* CalendarForChatRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarForChatRecordUITests.m; sourceTree = "<group>"; };
+		EAFDD7C02024631300A971BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFDD7CC2024640D00A971BF /* WWWeekNoteHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWWeekNoteHeader.h; sourceTree = "<group>"; };
+		EAFDD7CD2024640D00A971BF /* WWWeekNoteHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWWeekNoteHeader.m; sourceTree = "<group>"; };
+		EAFDD7CF2024644300A971BF /* WWTimestampDetailInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWTimestampDetailInfoModel.h; sourceTree = "<group>"; };
+		EAFDD7D02024644300A971BF /* WWMessageCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWMessageCalendarModel.m; sourceTree = "<group>"; };
+		EAFDD7D12024644300A971BF /* WWMessageCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWMessageCalendarModel.h; sourceTree = "<group>"; };
+		EAFDD7D22024644300A971BF /* WWTimestampDetailInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWTimestampDetailInfoModel.m; sourceTree = "<group>"; };
+		EAFDD7DC202468F800A971BF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWMessageCalendarTableViewCell.m; sourceTree = "<group>"; };
+		EAFDD7E720247A7200A971BF /* WWMessageCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWMessageCalendarTableViewCell.h; sourceTree = "<group>"; };
+		EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		EAFDD7E920247A7200A971BF /* WWCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAFDD7942024631200A971BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1394675DB320242B647A6D /* libPods-CalendarForChatRecord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7AC2024631300A971BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7B72024631300A971BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B6031A5FA842AC8068B7494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3324025F53BC23371C2BE147 /* libPods-CalendarForChatRecord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8203B12BB58B3D47066FFBC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244B150244BA44180AD373AB /* Pods-CalendarForChatRecord.debug.xcconfig */,
+				15D865B335AC0BDF10294B41 /* Pods-CalendarForChatRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAFDD78E2024631200A971BF = {
+			isa = PBXGroup;
+			children = (
+				EAFDD7992024631200A971BF /* CalendarForChatRecord */,
+				EAFDD7B22024631300A971BF /* CalendarForChatRecordTests */,
+				EAFDD7BD2024631300A971BF /* CalendarForChatRecordUITests */,
+				EAFDD7982024631200A971BF /* Products */,
+				8203B12BB58B3D47066FFBC5 /* Pods */,
+				4B6031A5FA842AC8068B7494 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAFDD7982024631200A971BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDD7972024631200A971BF /* CalendarForChatRecord.app */,
+				EAFDD7AF2024631300A971BF /* CalendarForChatRecordTests.xctest */,
+				EAFDD7BA2024631300A971BF /* CalendarForChatRecordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFDD7992024631200A971BF /* CalendarForChatRecord */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDD79A2024631200A971BF /* AppDelegate.h */,
+				EAFDD79B2024631200A971BF /* AppDelegate.m */,
+				EAFDD7A32024631200A971BF /* Assets.xcassets */,
+				EAFDD7A82024631200A971BF /* Info.plist */,
+				EAFDD7A52024631200A971BF /* LaunchScreen.storyboard */,
+				EAFDD7A92024631200A971BF /* main.m */,
+				EAFDD7A02024631200A971BF /* Main.storyboard */,
+				EAFDD7DC202468F800A971BF /* PrefixHeader.pch */,
+				EAFDD79D2024631200A971BF /* ViewController.h */,
+				EAFDD79E2024631200A971BF /* ViewController.m */,
+				EAFDD7D12024644300A971BF /* WWMessageCalendarModel.h */,
+				EAFDD7D02024644300A971BF /* WWMessageCalendarModel.m */,
+				EAFDD7CF2024644300A971BF /* WWTimestampDetailInfoModel.h */,
+				EAFDD7D22024644300A971BF /* WWTimestampDetailInfoModel.m */,
+				EAFDD7CC2024640D00A971BF /* WWWeekNoteHeader.h */,
+				EAFDD7CD2024640D00A971BF /* WWWeekNoteHeader.m */,
+				EAFDD7E920247A7200A971BF /* WWCalendarCollectionViewCell.h */,
+				EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */,
+				EAFDD7E720247A7200A971BF /* WWMessageCalendarTableViewCell.h */,
+				EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */,
+			);
+			path = CalendarForChatRecord;
+			sourceTree = "<group>";
+		};
+		EAFDD7B22024631300A971BF /* CalendarForChatRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDD7B32024631300A971BF /* CalendarForChatRecordTests.m */,
+				EAFDD7B52024631300A971BF /* Info.plist */,
+			);
+			path = CalendarForChatRecordTests;
+			sourceTree = "<group>";
+		};
+		EAFDD7BD2024631300A971BF /* CalendarForChatRecordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAFDD7BE2024631300A971BF /* CalendarForChatRecordUITests.m */,
+				EAFDD7C02024631300A971BF /* Info.plist */,
+			);
+			path = CalendarForChatRecordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAFDD7962024631200A971BF /* CalendarForChatRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFDD7C32024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecord" */;
+			buildPhases = (
+				2E5C2C40355EA78BA9AF9223 /* [CP] Check Pods Manifest.lock */,
+				EAFDD7932024631200A971BF /* Sources */,
+				EAFDD7942024631200A971BF /* Frameworks */,
+				EAFDD7952024631200A971BF /* Resources */,
+				9D0E5DE2FFCA244B8D3A7703 /* [CP] Embed Pods Frameworks */,
+				1934D5C8E2D475E17810035E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalendarForChatRecord;
+			productName = CalendarForChatRecord;
+			productReference = EAFDD7972024631200A971BF /* CalendarForChatRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAFDD7AE2024631300A971BF /* CalendarForChatRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFDD7C62024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecordTests" */;
+			buildPhases = (
+				EAFDD7AB2024631300A971BF /* Sources */,
+				EAFDD7AC2024631300A971BF /* Frameworks */,
+				EAFDD7AD2024631300A971BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFDD7B12024631300A971BF /* PBXTargetDependency */,
+			);
+			name = CalendarForChatRecordTests;
+			productName = CalendarForChatRecordTests;
+			productReference = EAFDD7AF2024631300A971BF /* CalendarForChatRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAFDD7B92024631300A971BF /* CalendarForChatRecordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFDD7C92024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecordUITests" */;
+			buildPhases = (
+				EAFDD7B62024631300A971BF /* Sources */,
+				EAFDD7B72024631300A971BF /* Frameworks */,
+				EAFDD7B82024631300A971BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAFDD7BC2024631300A971BF /* PBXTargetDependency */,
+			);
+			name = CalendarForChatRecordUITests;
+			productName = CalendarForChatRecordUITests;
+			productReference = EAFDD7BA2024631300A971BF /* CalendarForChatRecordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAFDD78F2024631200A971BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tony Zhang";
+				TargetAttributes = {
+					EAFDD7962024631200A971BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EAFDD7AE2024631300A971BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAFDD7962024631200A971BF;
+					};
+					EAFDD7B92024631300A971BF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAFDD7962024631200A971BF;
+					};
+				};
+			};
+			buildConfigurationList = EAFDD7922024631200A971BF /* Build configuration list for PBXProject "CalendarForChatRecord" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAFDD78E2024631200A971BF;
+			productRefGroup = EAFDD7982024631200A971BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAFDD7962024631200A971BF /* CalendarForChatRecord */,
+				EAFDD7AE2024631300A971BF /* CalendarForChatRecordTests */,
+				EAFDD7B92024631300A971BF /* CalendarForChatRecordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAFDD7952024631200A971BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDD7A72024631200A971BF /* LaunchScreen.storyboard in Resources */,
+				EAFDD7A42024631200A971BF /* Assets.xcassets in Resources */,
+				EAFDD7A22024631200A971BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7AD2024631300A971BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7B82024631300A971BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1934D5C8E2D475E17810035E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalendarForChatRecord/Pods-CalendarForChatRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E5C2C40355EA78BA9AF9223 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D0E5DE2FFCA244B8D3A7703 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalendarForChatRecord/Pods-CalendarForChatRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAFDD7932024631200A971BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */,
+				EAFDD79F2024631200A971BF /* ViewController.m in Sources */,
+				EAFDD7AA2024631200A971BF /* main.m in Sources */,
+				EAFDD7CE2024640E00A971BF /* WWWeekNoteHeader.m in Sources */,
+				EAFDD7D32024644400A971BF /* WWMessageCalendarModel.m in Sources */,
+				EAFDD79C2024631200A971BF /* AppDelegate.m in Sources */,
+				EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */,
+				EAFDD7D42024644400A971BF /* WWTimestampDetailInfoModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7AB2024631300A971BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDD7B42024631300A971BF /* CalendarForChatRecordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFDD7B62024631300A971BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAFDD7BF2024631300A971BF /* CalendarForChatRecordUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAFDD7B12024631300A971BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFDD7962024631200A971BF /* CalendarForChatRecord */;
+			targetProxy = EAFDD7B02024631300A971BF /* PBXContainerItemProxy */;
+		};
+		EAFDD7BC2024631300A971BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAFDD7962024631200A971BF /* CalendarForChatRecord */;
+			targetProxy = EAFDD7BB2024631300A971BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAFDD7A02024631200A971BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFDD7A12024631200A971BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAFDD7A52024631200A971BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAFDD7A62024631200A971BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAFDD7C12024631300A971BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAFDD7C22024631300A971BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAFDD7C42024631300A971BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244B150244BA44180AD373AB /* Pods-CalendarForChatRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3X43HEXKNM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CalendarForChatRecord/PrefixHeader.pch";
+				INFOPLIST_FILE = CalendarForChatRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAFDD7C52024631300A971BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D865B335AC0BDF10294B41 /* Pods-CalendarForChatRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3X43HEXKNM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CalendarForChatRecord/PrefixHeader.pch";
+				INFOPLIST_FILE = CalendarForChatRecord/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAFDD7C72024631300A971BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalendarForChatRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarForChatRecord.app/CalendarForChatRecord";
+			};
+			name = Debug;
+		};
+		EAFDD7C82024631300A971BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalendarForChatRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarForChatRecord.app/CalendarForChatRecord";
+			};
+			name = Release;
+		};
+		EAFDD7CA2024631300A971BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalendarForChatRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CalendarForChatRecord;
+			};
+			name = Debug;
+		};
+		EAFDD7CB2024631300A971BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CalendarForChatRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wowo.CalendarForChatRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CalendarForChatRecord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAFDD7922024631200A971BF /* Build configuration list for PBXProject "CalendarForChatRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFDD7C12024631300A971BF /* Debug */,
+				EAFDD7C22024631300A971BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFDD7C32024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFDD7C42024631300A971BF /* Debug */,
+				EAFDD7C52024631300A971BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFDD7C62024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFDD7C72024631300A971BF /* Debug */,
+				EAFDD7C82024631300A971BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFDD7C92024631300A971BF /* Build configuration list for PBXNativeTarget "CalendarForChatRecordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAFDD7CA2024631300A971BF /* Debug */,
+				EAFDD7CB2024631300A971BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAFDD78F2024631200A971BF /* Project object */;
+}
