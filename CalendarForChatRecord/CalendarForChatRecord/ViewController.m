@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MonthCalendarView.h"
 #import "WWWeekNoteHeader.h"
 #import "WWMessageCalendarModel.h"
 #import "WWMessageCalendarTableViewCell.h"
@@ -38,6 +39,10 @@
 /** 数据处理队列 */
 @property(nonatomic,strong)dispatch_group_t group;
 
+
+@property(nonatomic,strong)MonthCalendarView *calendarView;
+
+
 @end
 
 @implementation ViewController
@@ -61,19 +66,26 @@
     [super viewDidLoad];
     self.title = @"按日期查找";
     self.view.backgroundColor = [UIColor whiteColor];
-    WWWeekNoteHeader *haderView = [[WWWeekNoteHeader alloc]initWithFrame:CGRectMake(0, 20, WWScreenWidth, 35)];
-    [self.view addSubview:haderView];
-    self.mainTable = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(haderView.frame), WWScreenWidth, WWScreenHeight-55) style:(UITableViewStyleGrouped)];
-    self.mainTable.delegate = self;
-    self.mainTable.dataSource = self;
-    self.mainTable.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.mainTable];
-    self.mainTable.rowHeight = UITableViewAutomaticDimension;
-    self.mainTable.estimatedSectionHeaderHeight = 0;
-    self.mainTable.estimatedSectionFooterHeight = 0;
-    [self.mainTable registerClass:[WWMessageCalendarTableViewCell class] forCellReuseIdentifier:@"cell"];
-    self.mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self dealDateCalendar];
+//    WWWeekNoteHeader *haderView = [[WWWeekNoteHeader alloc]initWithFrame:CGRectMake(0, 20, WWScreenWidth, 35)];
+//    [self.view addSubview:haderView];
+//    self.mainTable = [[UITableView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(haderView.frame), WWScreenWidth, WWScreenHeight-55) style:(UITableViewStyleGrouped)];
+//    self.mainTable.delegate = self;
+//    self.mainTable.dataSource = self;
+//    self.mainTable.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:self.mainTable];
+//    self.mainTable.rowHeight = UITableViewAutomaticDimension;
+//    self.mainTable.estimatedSectionHeaderHeight = 0;
+//    self.mainTable.estimatedSectionFooterHeight = 0;
+//    [self.mainTable registerClass:[WWMessageCalendarTableViewCell class] forCellReuseIdentifier:@"cell"];
+//    self.mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    [self dealDateCalendar];
+    
+    self.calendarView = [[MonthCalendarView alloc] init];
+    [self.view addSubview:self.calendarView];
+    [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.offset(0);
+        make.top.offset(60);
+    }];
 }
 
 -(NSMutableDictionary *)calendarDict{

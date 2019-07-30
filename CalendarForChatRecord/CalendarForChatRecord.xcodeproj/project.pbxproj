@@ -21,6 +21,9 @@
 		EAFDD7D42024644400A971BF /* WWTimestampDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7D22024644300A971BF /* WWTimestampDetailInfoModel.m */; };
 		EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */; };
 		EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */; };
+		F630043922F0232300C61DD8 /* CalendarDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */; };
+		F630043A22F0232300C61DD8 /* MonthCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043422F0232300C61DD8 /* MonthCalendarView.m */; };
+		F630043B22F0232300C61DD8 /* CalendarDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		EAFDD7E720247A7200A971BF /* WWMessageCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWMessageCalendarTableViewCell.h; sourceTree = "<group>"; };
 		EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCalendarCollectionViewCell.m; sourceTree = "<group>"; };
 		EAFDD7E920247A7200A971BF /* WWCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDetailInfoModel.m; sourceTree = "<group>"; };
+		F630043422F0232300C61DD8 /* MonthCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCalendarView.m; sourceTree = "<group>"; };
+		F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCollectionViewCell.m; sourceTree = "<group>"; };
+		F630043622F0232300C61DD8 /* CalendarDetailInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDetailInfoModel.h; sourceTree = "<group>"; };
+		F630043722F0232300C61DD8 /* CalendarDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCollectionViewCell.h; sourceTree = "<group>"; };
+		F630043822F0232300C61DD8 /* MonthCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCalendarView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +170,7 @@
 				EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */,
 				EAFDD7E720247A7200A971BF /* WWMessageCalendarTableViewCell.h */,
 				EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */,
+				F630043222F0232300C61DD8 /* MonthCalendar */,
 			);
 			path = CalendarForChatRecord;
 			sourceTree = "<group>";
@@ -181,6 +191,19 @@
 				EAFDD7C02024631300A971BF /* Info.plist */,
 			);
 			path = CalendarForChatRecordUITests;
+			sourceTree = "<group>";
+		};
+		F630043222F0232300C61DD8 /* MonthCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F630043722F0232300C61DD8 /* CalendarDayCollectionViewCell.h */,
+				F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */,
+				F630043622F0232300C61DD8 /* CalendarDetailInfoModel.h */,
+				F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */,
+				F630043822F0232300C61DD8 /* MonthCalendarView.h */,
+				F630043422F0232300C61DD8 /* MonthCalendarView.m */,
+			);
+			path = MonthCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +393,10 @@
 				EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */,
 				EAFDD79F2024631200A971BF /* ViewController.m in Sources */,
 				EAFDD7AA2024631200A971BF /* main.m in Sources */,
+				F630043B22F0232300C61DD8 /* CalendarDayCollectionViewCell.m in Sources */,
+				F630043922F0232300C61DD8 /* CalendarDetailInfoModel.m in Sources */,
 				EAFDD7CE2024640E00A971BF /* WWWeekNoteHeader.m in Sources */,
+				F630043A22F0232300C61DD8 /* MonthCalendarView.m in Sources */,
 				EAFDD7D32024644400A971BF /* WWMessageCalendarModel.m in Sources */,
 				EAFDD79C2024631200A971BF /* AppDelegate.m in Sources */,
 				EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */,
@@ -539,7 +565,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3X43HEXKNM;
+				DEVELOPMENT_TEAM = R2LGXSETVJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CalendarForChatRecord/PrefixHeader.pch";
 				INFOPLIST_FILE = CalendarForChatRecord/Info.plist;
@@ -556,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3X43HEXKNM;
+				DEVELOPMENT_TEAM = R2LGXSETVJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CalendarForChatRecord/PrefixHeader.pch";
 				INFOPLIST_FILE = CalendarForChatRecord/Info.plist;
