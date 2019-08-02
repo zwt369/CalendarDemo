@@ -1,19 +1,19 @@
 //
-//  CalendarDetailInfoModel.m
+//  LCCalendarDetailInfoModel.m
 //  WoWo
 //
 //  Created by Tony Zhang on 2018/1/25.
 //  Copyright © 2018年 Woohe. All rights reserved.
 //
 
-#import "CalendarDetailInfoModel.h"
+#import "LCCalendarDetailInfoModel.h"
 
-@implementation CalendarDetailInfoModel
+@implementation LCCalendarDetailInfoModel
 
-+(CalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date{
++(LCCalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date{
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitWeekday) fromDate:date];
-    CalendarDetailInfoModel *model = [[CalendarDetailInfoModel alloc]init];
+    LCCalendarDetailInfoModel *model = [[LCCalendarDetailInfoModel alloc]init];
     model.year = components.year;
     model.day = components.day;
     model.month = components.month;

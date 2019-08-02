@@ -1,14 +1,14 @@
 //
-//  CalendarDayCollectionViewCell.m
+//  LCCalendarDayCollectionViewCell.m
 //  WoWo
 //
 //  Created by Tony Zhang on 2018/1/24.
 //  Copyright © 2018年 Woohe. All rights reserved.
 //
 
-#import "CalendarDayCollectionViewCell.h"
+#import "LCCalendarDayCollectionViewCell.h"
 
-@interface CalendarDayCollectionViewCell ()
+@interface LCCalendarDayCollectionViewCell ()
 
 /**  日期  */
 @property (nonatomic , strong) UILabel *dateLabel;
@@ -22,7 +22,7 @@
 
 
 
-@implementation CalendarDayCollectionViewCell
+@implementation LCCalendarDayCollectionViewCell
 
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -68,7 +68,7 @@
     
 }
 
--(void)setModel:(CalendarDetailInfoModel *)model{
+-(void)setModel:(LCCalendarDetailInfoModel *)model{
     _model = model;
     self.dateLabel.text = [NSString stringWithFormat:@"%ld",model.day];
     if (!model.chineseDay) {

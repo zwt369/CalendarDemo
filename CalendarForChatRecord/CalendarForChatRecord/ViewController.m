@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MonthCalendarView.h"
+#import "LCMonthCalendarView.h"
 #import "WWWeekNoteHeader.h"
 #import "WWMessageCalendarModel.h"
 #import "WWMessageCalendarTableViewCell.h"
 #import "WWTimestampDetailInfoModel.h"
+#import "LCWeekCalendarView.h"
 
 
 
@@ -40,7 +41,7 @@
 @property(nonatomic,strong)dispatch_group_t group;
 
 
-@property(nonatomic,strong)MonthCalendarView *calendarView;
+@property(nonatomic,strong)LCMonthCalendarView *calendarView;
 
 
 @end
@@ -80,11 +81,18 @@
 //    self.mainTable.separatorStyle = UITableViewCellSeparatorStyleNone;
 //    [self dealDateCalendar];
     
-    self.calendarView = [[MonthCalendarView alloc] init];
+    self.calendarView = [[LCMonthCalendarView alloc] init];
     [self.view addSubview:self.calendarView];
     [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.offset(0);
         make.top.offset(60);
+    }];
+    
+    LCWeekCalendarView *weakView = [[LCWeekCalendarView alloc] init];
+    [self.view addSubview:weakView];
+    [weakView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.offset(0);
+        make.top.equalTo(self.calendarView.mas_bottom).offset(60);
     }];
 }
 

@@ -1,5 +1,5 @@
 //
-//  CalendarDetailInfoModel.h
+//  LCCalendarDetailInfoModel.h
 //  WoWo
 //
 //  Created by Tony Zhang on 2018/1/25.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CalendarDetailInfoModel : NSObject
+@interface LCCalendarDetailInfoModel : NSObject
 
 /**年*/
 @property(nonatomic,assign)NSInteger year;
@@ -37,7 +37,7 @@
 @property(nonatomic,assign)BOOL isSelected;
 
 /** date转模型 */
-+(CalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date;
++(LCCalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date;
 
 -(NSDate *)dateValue;
 

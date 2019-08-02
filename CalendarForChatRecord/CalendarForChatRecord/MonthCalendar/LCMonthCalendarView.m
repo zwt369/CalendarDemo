@@ -6,16 +6,16 @@
 //  Copyright © 2018年 Woohe. All rights reserved.
 //
 
-#import "MonthCalendarView.h"
-#import "CalendarDayCollectionViewCell.h"
+#import "LCMonthCalendarView.h"
+#import "LCCalendarDayCollectionViewCell.h"
 
 
-@interface MonthCalendarView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LCMonthCalendarView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 /**collectionView*/
 @property(nonatomic,strong)UICollectionView *colleciontView;
 /**数据源*/
-@property(nonatomic,strong)NSMutableArray<CalendarDetailInfoModel *> *modelArray;
+@property(nonatomic,strong)NSMutableArray<LCCalendarDetailInfoModel *> *modelArray;
 /** 当前月份 */
 @property (nonatomic, strong)UILabel *currentMonthLabel;
 /** 当前显示date */
@@ -23,14 +23,14 @@
 /** 当前选中date */
 @property (nonatomic, strong)NSDate *selectedDate;
 /** 当前选中model */
-@property (nonatomic, strong)CalendarDetailInfoModel *selectedModel;
+@property (nonatomic, strong)LCCalendarDetailInfoModel *selectedModel;
 /** 标题 */
 @property (nonatomic, strong)UILabel *titleLabel;
 
 @end
 
 
-@implementation MonthCalendarView
+@implementation LCMonthCalendarView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
@@ -94,7 +94,7 @@
     collectionView.delegate = self;
     self.colleciontView = collectionView;
     collectionView.backgroundColor = [UIColor clearColor];
-    [collectionView registerClass:[CalendarDayCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [collectionView registerClass:[LCCalendarDayCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(leftSwipe:)];
     swipe.direction = UISwipeGestureRecognizerDirectionLeft;
@@ -109,7 +109,7 @@
     [self dealDateCalendarWithDate:self.currentDate];
 }
 
--(NSMutableArray<CalendarDetailInfoModel *> *)modelArray{
+-(NSMutableArray<LCCalendarDetailInfoModel *> *)modelArray{
     if (_modelArray == nil) {
         _modelArray = [[NSMutableArray alloc]init];
     }
@@ -144,32 +144,17 @@
     NSInteger totoalWeek = ceil((totalCount+weekDay-1)/7.0)+1;
     /**  获取需要绘制日历第一天  */
     NSDate *firstMonthDate = [NSDate dateWithTimeInterval:-(weekDay-1)*24*3600 sinceDate:currentFirstDate];
-    /**  获取需要绘制日历最后一个月第一天  */
-    NSDate *lastMonthFirstDate = [NSDate dateWithTimeInterval:31*24*3600 sinceDate:currentFirstDate];
     /**  今天  */
-    CalendarDetailInfoModel *todayModel = [CalendarDetailInfoModel modelInMonthWithDate:[NSDate date]];
+    LCCalendarDetailInfoModel *todayModel = [LCCalendarDetailInfoModel modelInMonthWithDate:[NSDate date]];
     /**  当前选中的日期  */
-    CalendarDetailInfoModel *selectedModel = [CalendarDetailInfoModel modelInMonthWithDate:self.selectedDate];
-    
-    CalendarDetailInfoModel *firstModel = [CalendarDetailInfoModel modelInMonthWithDate:firstMonthDate];
-    CalendarDetailInfoModel *currentFirstModel = [CalendarDetailInfoModel modelInMonthWithDate:currentFirstDate];
-    CalendarDetailInfoModel *lastFirstModel = [CalendarDetailInfoModel modelInMonthWithDate:lastMonthFirstDate];
+    LCCalendarDetailInfoModel *selectedModel = [LCCalendarDetailInfoModel modelInMonthWithDate:self.selectedDate];
+    LCCalendarDetailInfoModel *currentFirstModel = [LCCalendarDetailInfoModel modelInMonthWithDate:currentFirstDate];
     [self.modelArray removeAllObjects];
     for (int i = 0; i < totoalWeek*7; i++) {
-        CalendarDetailInfoModel *model = [[CalendarDetailInfoModel alloc] init];
-        if (i<weekDay-1) {
-            model.year = firstModel.year;
-            model.month = firstModel.month;
-            model.day = firstModel.day+i;
-        }else if (i<totalCount+weekDay-1){
-            model.year = currentFirstModel.year;
-            model.month = currentFirstModel.month;
-            model.day = currentFirstModel.day+(i-weekDay)+1;
+        NSDate *modelDate = [NSDate dateWithTimeInterval:i*24*3600 sinceDate:firstMonthDate];
+        LCCalendarDetailInfoModel *model = [LCCalendarDetailInfoModel modelInMonthWithDate:modelDate];
+        if (model.month ==  currentFirstModel.month) {
             model.isCurrentMonth = YES;
-        }else{
-            model.year = lastFirstModel.year;
-            model.month = lastFirstModel.month;
-            model.day = lastFirstModel.day+(i-weekDay-totalCount)+1;
         }
         if (model.year == todayModel.year && model.month == todayModel.month && model.day == todayModel.day) {
             model.isToday = YES;
@@ -188,10 +173,10 @@
 }
 
 /** date转模型 */
--(CalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date{
+-(LCCalendarDetailInfoModel *)modelInMonthWithDate:(NSDate *)date{
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay |NSCalendarUnitWeekday) fromDate:date];
-    CalendarDetailInfoModel *model = [[CalendarDetailInfoModel alloc]init];
+    LCCalendarDetailInfoModel *model = [[LCCalendarDetailInfoModel alloc]init];
     model.year = components.year;
     model.day = components.day;
     model.month = components.month;
@@ -257,14 +242,14 @@
 
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CalendarDayCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    LCCalendarDayCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.model = self.modelArray[indexPath.row];
     return cell;
 }
 
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    CalendarDetailInfoModel *model = self.modelArray[indexPath.row];
+    LCCalendarDetailInfoModel *model = self.modelArray[indexPath.row];
     if (model == self.selectedModel || !model.isCurrentMonth) {
         return;
     }

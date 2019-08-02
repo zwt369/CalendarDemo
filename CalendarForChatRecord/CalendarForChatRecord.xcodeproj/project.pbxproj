@@ -21,9 +21,10 @@
 		EAFDD7D42024644400A971BF /* WWTimestampDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7D22024644300A971BF /* WWTimestampDetailInfoModel.m */; };
 		EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E620247A7200A971BF /* WWMessageCalendarTableViewCell.m */; };
 		EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */; };
-		F630043922F0232300C61DD8 /* CalendarDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */; };
-		F630043A22F0232300C61DD8 /* MonthCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043422F0232300C61DD8 /* MonthCalendarView.m */; };
-		F630043B22F0232300C61DD8 /* CalendarDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */; };
+		F630043922F0232300C61DD8 /* LCCalendarDetailInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043322F0232300C61DD8 /* LCCalendarDetailInfoModel.m */; };
+		F630043A22F0232300C61DD8 /* LCMonthCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043422F0232300C61DD8 /* LCMonthCalendarView.m */; };
+		F630043B22F0232300C61DD8 /* LCCalendarDayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F630043522F0232300C61DD8 /* LCCalendarDayCollectionViewCell.m */; };
+		F6CD63FE22F2E8E100DFFACF /* LCWeekCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CD63FD22F2E8E100DFFACF /* LCWeekCalendarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,12 +75,14 @@
 		EAFDD7E720247A7200A971BF /* WWMessageCalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWMessageCalendarTableViewCell.h; sourceTree = "<group>"; };
 		EAFDD7E820247A7200A971BF /* WWCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWCalendarCollectionViewCell.m; sourceTree = "<group>"; };
 		EAFDD7E920247A7200A971BF /* WWCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWCalendarCollectionViewCell.h; sourceTree = "<group>"; };
-		F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDetailInfoModel.m; sourceTree = "<group>"; };
-		F630043422F0232300C61DD8 /* MonthCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCalendarView.m; sourceTree = "<group>"; };
-		F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCollectionViewCell.m; sourceTree = "<group>"; };
-		F630043622F0232300C61DD8 /* CalendarDetailInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDetailInfoModel.h; sourceTree = "<group>"; };
-		F630043722F0232300C61DD8 /* CalendarDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarDayCollectionViewCell.h; sourceTree = "<group>"; };
-		F630043822F0232300C61DD8 /* MonthCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCalendarView.h; sourceTree = "<group>"; };
+		F630043322F0232300C61DD8 /* LCCalendarDetailInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCalendarDetailInfoModel.m; sourceTree = "<group>"; };
+		F630043422F0232300C61DD8 /* LCMonthCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMonthCalendarView.m; sourceTree = "<group>"; };
+		F630043522F0232300C61DD8 /* LCCalendarDayCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCalendarDayCollectionViewCell.m; sourceTree = "<group>"; };
+		F630043622F0232300C61DD8 /* LCCalendarDetailInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCalendarDetailInfoModel.h; sourceTree = "<group>"; };
+		F630043722F0232300C61DD8 /* LCCalendarDayCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCalendarDayCollectionViewCell.h; sourceTree = "<group>"; };
+		F630043822F0232300C61DD8 /* LCMonthCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMonthCalendarView.h; sourceTree = "<group>"; };
+		F6CD63FC22F2E8E100DFFACF /* LCWeekCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCWeekCalendarView.h; sourceTree = "<group>"; };
+		F6CD63FD22F2E8E100DFFACF /* LCWeekCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCWeekCalendarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,12 +199,14 @@
 		F630043222F0232300C61DD8 /* MonthCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				F630043722F0232300C61DD8 /* CalendarDayCollectionViewCell.h */,
-				F630043522F0232300C61DD8 /* CalendarDayCollectionViewCell.m */,
-				F630043622F0232300C61DD8 /* CalendarDetailInfoModel.h */,
-				F630043322F0232300C61DD8 /* CalendarDetailInfoModel.m */,
-				F630043822F0232300C61DD8 /* MonthCalendarView.h */,
-				F630043422F0232300C61DD8 /* MonthCalendarView.m */,
+				F630043722F0232300C61DD8 /* LCCalendarDayCollectionViewCell.h */,
+				F630043522F0232300C61DD8 /* LCCalendarDayCollectionViewCell.m */,
+				F630043622F0232300C61DD8 /* LCCalendarDetailInfoModel.h */,
+				F630043322F0232300C61DD8 /* LCCalendarDetailInfoModel.m */,
+				F630043822F0232300C61DD8 /* LCMonthCalendarView.h */,
+				F630043422F0232300C61DD8 /* LCMonthCalendarView.m */,
+				F6CD63FC22F2E8E100DFFACF /* LCWeekCalendarView.h */,
+				F6CD63FD22F2E8E100DFFACF /* LCWeekCalendarView.m */,
 			);
 			path = MonthCalendar;
 			sourceTree = "<group>";
@@ -393,14 +398,15 @@
 				EAFDD7EB20247A7300A971BF /* WWCalendarCollectionViewCell.m in Sources */,
 				EAFDD79F2024631200A971BF /* ViewController.m in Sources */,
 				EAFDD7AA2024631200A971BF /* main.m in Sources */,
-				F630043B22F0232300C61DD8 /* CalendarDayCollectionViewCell.m in Sources */,
-				F630043922F0232300C61DD8 /* CalendarDetailInfoModel.m in Sources */,
+				F630043B22F0232300C61DD8 /* LCCalendarDayCollectionViewCell.m in Sources */,
+				F630043922F0232300C61DD8 /* LCCalendarDetailInfoModel.m in Sources */,
 				EAFDD7CE2024640E00A971BF /* WWWeekNoteHeader.m in Sources */,
-				F630043A22F0232300C61DD8 /* MonthCalendarView.m in Sources */,
+				F630043A22F0232300C61DD8 /* LCMonthCalendarView.m in Sources */,
 				EAFDD7D32024644400A971BF /* WWMessageCalendarModel.m in Sources */,
 				EAFDD79C2024631200A971BF /* AppDelegate.m in Sources */,
 				EAFDD7EA20247A7300A971BF /* WWMessageCalendarTableViewCell.m in Sources */,
 				EAFDD7D42024644400A971BF /* WWTimestampDetailInfoModel.m in Sources */,
+				F6CD63FE22F2E8E100DFFACF /* LCWeekCalendarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
